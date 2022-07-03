@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton Loading Animation | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="main ">
+  <div class="img ">
+    <div class="image loading">   
+    </div>
+    <img class="" src="image.jpg" alt="">
+  </div>
+  <div class="heading">
+    <div class="head loading">
+    </div>
+    <h1 class=" "> Fighting to end the Elephant Ivory Trade </h1>
+  </div>
+  <div class="content">
+    <div class="paragraph loading">
+    </div>
+    <p class="">
+      With schools closed in NSW and Victoria, and childcare restricted to authoriz.
+    </p>
+  </div>
+  
+ </div>
+
+ <script>
+     
+     setTimeout(() => {
+      showdata()
+     }, 1000)
+
+
+
+  function showdata() {
+    let img = document.querySelector('.image')
+    let heading = document.querySelector('.head')
+    let content = document.querySelector('.paragraph')
+    
+
+    
+    img.classList.remove('loading')
+    heading.classList.remove('loading')
+    content.classList.remove('loading')
+    
+
+
+  }
+ </script>
+</body>
+</html>
